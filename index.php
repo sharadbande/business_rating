@@ -12,13 +12,44 @@
 
     <!-- Raty -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raty/3.1.1/jquery.raty.min.js"></script>
-
+<style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .table thead {
+            background-color: #212529;
+            color: white;
+        }
+        .rating-cell {
+            min-width: 120px;
+        }
+        .empty-state {
+            padding: 40px;
+            text-align: center;
+            color: #6c757d;
+        }
+    </style>
 </head>
 <body class="container mt-5">
 
-    <h2>Business Listing</h2>
+    <!-- <h2>Business Listing</h2> -->
 
-    <button class="btn btn-primary mb-3" id="addBusinessBtn">Add Business</button>
+    <!-- <button class="btn btn-primary mb-3" id="addBusinessBtn">Add Business</button> -->
+         <!-- Header Section -->
+    <div class="page-header mb-4">
+        <div>
+            <h2 class="fw-bold mb-0">Business Listing</h2>
+            <small class="text-muted">Manage and rate businesses</small>
+        </div>
+        <button class="btn btn-primary px-4" id="addBusinessBtn">
+            + Add Business
+        </button>
+    </div>
 
     <table class="table table-bordered">
         <thead>
